@@ -1,10 +1,9 @@
 const expect = chai.expect;
 
 describe('War game', function() {
-    it("deals even decks", function() {
+    it("Make sure after deck is split both players have even number of cards", function() {
         const deck = new Deck();
-        deck.dealDeck();
-        expect(player1.length).to.equal(26) && expect(player2.length).to.equal(26)
+        let playerDecks = deck.dealDeck();
+        expect(playerDecks.player1.length).to.equal(playerDecks.player2.length)
+        })
     })
-}
-)
